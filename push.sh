@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This is a script to push up to main with a token. 
+
 # This is a setting that causes the whole 
 # script to fail if we exit with a 1.
 set -e
