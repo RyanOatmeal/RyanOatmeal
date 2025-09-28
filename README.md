@@ -8,12 +8,9 @@ I'm building a knowledge base.
 
 I just use the modal text editor in a terminal. So the exact package I might be using 
 at any time doesn't matter. 
-I'm happy usuing any of the following:
+I'm happy usuing either of the following:
 - https://www.vim.org/
 - https://neovim.io/
-- https://www.gnu.org/software/emacs/ with evil mode enabled
-- https://code.visualstudio.com/ with the vim plugin
-- and so on...
 
 ### tmux
 
