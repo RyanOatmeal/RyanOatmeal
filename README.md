@@ -16,11 +16,11 @@ I'm happy usuing either of the following:
 
 - https://github.com/tmux/tmux/wiki
 
-### Bash
+### bash
 
 - https://www.gnu.org/software/bash/
 
-### Coreutils
+### coreutils
 
 - https://www.gnu.org/software/coreutils/
 
