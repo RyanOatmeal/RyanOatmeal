@@ -8,9 +8,12 @@ I'm building a knowledge base.
 
 I just use the modal text editor in a terminal. So the exact package I might be using 
 at any time doesn't matter. 
-I'm happy usuing either of the following:
+
+I'm happy using either of the following:
 - https://www.vim.org/
 - https://neovim.io/
+
+I'm also happy just typing vi wherever and hoping for the best!
 
 ### tmux
 
