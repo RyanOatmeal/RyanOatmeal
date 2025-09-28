@@ -2,6 +2,9 @@
 
 # This is a script to push up to main with a token. 
 
+# This script should be ran from the root directory of
+# the project.
+
 # This is a setting that causes the whole 
 # script to fail if we exit with a 1.
 set -e
