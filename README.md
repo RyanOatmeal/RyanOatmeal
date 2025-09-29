@@ -55,7 +55,7 @@ https://www.gnu.org/software/gawk/
 See the following for information about `--posix`:
 https://www.gnu.org/software/gawk/manual/html_node/Options.html
 
-# git
+## git
 
 https://git-scm.com/
 
