@@ -37,8 +37,9 @@ https://www.gnu.org/software/coreutils/
 
 https://www.gnu.org/software/sed/
 
-## gawk
+## awk
 
+I try to stick with the POSIX compliant features of the following:
 https://www.gnu.org/software/gawk/
 
 # A note on AI
