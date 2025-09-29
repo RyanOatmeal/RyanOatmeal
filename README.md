@@ -23,15 +23,15 @@ See https://vi.stackexchange.com/questions/23008/posix-compliant-vi-implementati
 
 ## tmux
 
-- https://github.com/tmux/tmux/wiki
+https://github.com/tmux/tmux/wiki
 
 ## bash
 
-- https://www.gnu.org/software/bash/
+https://www.gnu.org/software/bash/
 
 ## coreutils
 
-- https://www.gnu.org/software/coreutils/
+https://www.gnu.org/software/coreutils/
 
 ## sed
 
