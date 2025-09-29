@@ -4,6 +4,8 @@ I'm building a knowledge base.
 
 # Software I'm Using
 
+I enjoy a unix approach to text editing.
+
 ## vi
 
 I just use the modal text editor in a terminal. So the exact package I might be using 
@@ -13,7 +15,7 @@ I'm happy using either of the following:
 - https://www.vim.org/
 - https://neovim.io/
 
-I'm also happy just typing vi wherever and hoping for the best!
+I'm also happy just typing vi in whatever available terminal and hoping for the best!
 
 At the moment, I'm on a fedora machine using the vi command which just runs vim 
 with $VIM_POSIX=1 in my ~/.bashrc in order to keep the editor lean and mean. 
