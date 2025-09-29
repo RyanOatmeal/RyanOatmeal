@@ -14,7 +14,7 @@ Just `touch <file>`, `vi <file>`, and get to it :).
 
 # Software I'm Using
 
-I enjoy a unix approach to text editing.
+I enjoy a unix style approach to text editing.
 
 ## vi
 
