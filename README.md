@@ -2,6 +2,16 @@
 
 I'm building a knowledge base. 
 
+# Use
+
+File paths are relative to the root of this repo.
+
+You'll need my pass phrase for my encryption scripts. Store it in 
+`../pass_phrase`. To use the push script you need a github fine 
+grained personal access token (see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+which you then store in `../token`. Both filepaths just lead to textfiles that I don't put `.txt` on.
+Just `touch <file>`, `vi <file>`, and get to it :). 
+
 # Software I'm Using
 
 I enjoy a unix approach to text editing.
@@ -44,6 +54,10 @@ https://www.gnu.org/software/gawk/
 
 See the following for information about `--posix`:
 https://www.gnu.org/software/gawk/manual/html_node/Options.html
+
+# git
+
+https://git-scm.com/
 
 # A note on AI
 

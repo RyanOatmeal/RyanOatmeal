@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is a script to encrypt my project planning. 
+# This is a script to decrypt my project planning. 
 
 # This script should be ran from the root directory of
 # the project.
