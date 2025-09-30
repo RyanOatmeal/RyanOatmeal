@@ -1,8 +1,14 @@
 # Software I'm Using
 
-I enjoy a unix style approach to text editing.
+This is mostly a reference for me to know what to install if I have to migrate
+systems but I intend for this to be expanded into a document that also details
+exactly how I use all of these tools in the near future.
 
-## vi
+## Text Editing
+
+I enjoy a terminal based, unix style approach.
+
+### vi
 
 I just use the modal text editor in a terminal. So the exact package I might be using 
 at any time doesn't matter. 
@@ -17,23 +23,15 @@ At the moment, I'm on a fedora machine using the vi command which just runs vim
 with $VIM_POSIX=1 in my ~/.bashrc in order to keep the editor lean and mean. 
 See https://vi.stackexchange.com/questions/23008/posix-compliant-vi-implementations
 
-## tmux
+### grep
 
-https://github.com/tmux/tmux/wiki
+https://www.gnu.org/software/grep/
 
-## bash
-
-https://www.gnu.org/software/bash/
-
-## coreutils
-
-https://www.gnu.org/software/coreutils/
-
-## sed
+### sed
 
 https://www.gnu.org/software/sed/
 
-## awk
+### awk
 
 I use the following with the `--posix` flag: 
 https://www.gnu.org/software/gawk/
@@ -41,11 +39,32 @@ https://www.gnu.org/software/gawk/
 See the following for information about `--posix`:
 https://www.gnu.org/software/gawk/manual/html_node/Options.html
 
-## git
+## Terminal
+
+### tmux
+
+https://github.com/tmux/tmux/wiki
+
+$## bash
+
+https://www.gnu.org/software/bash/
+
+### coreutils
+
+I mention tools in this grouping elsewhere, but I also want to 
+make a catchall entry that tells you I use the rest of what's in here too.
+
+https://www.gnu.org/software/coreutils/
+
+## Other
+
+### git
 
 https://git-scm.com/
 
-## gpg
+### gpg
+
+I just use this to protect the world from my caffeine fueled blabbering 
+in `notes/project_planning.txt`.
 
 https://www.gnupg.org/
-
