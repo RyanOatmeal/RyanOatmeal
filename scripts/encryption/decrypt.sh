@@ -18,3 +18,4 @@ fi
 
 PASS_PHRASE=$(cat "$PASS_PHRASE_FILE" | tr -d '\n')
 gpg --batch --yes --passphrase "$PASS_PHRASE" -o notes/project_planning.txt -d notes/project_planning.txt.gpg
+rm notes/project_planning.txt.gpg
