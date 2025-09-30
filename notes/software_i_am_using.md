@@ -45,14 +45,11 @@ https://www.gnu.org/software/gawk/manual/html_node/Options.html
 
 https://github.com/tmux/tmux/wiki
 
-$## bash
+### bash
 
 https://www.gnu.org/software/bash/
 
 ### coreutils
-
-I mention tools in this grouping elsewhere, but I also want to 
-make a catchall entry that tells you I use the rest of what's in here too.
 
 https://www.gnu.org/software/coreutils/
 
