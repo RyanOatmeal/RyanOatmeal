@@ -4,64 +4,18 @@ I'm building a knowledge base.
 
 # Use
 
-File paths are relative to the root of this repo.
-
-You'll need my pass phrase for my encryption scripts. Store it in 
-`../pass_phrase`. To use the push script you need a github fine 
-grained personal access token (see https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
-which you then store in `../token`. Both filepaths just lead to textfiles that I don't put `.txt` on.
-Just `touch <file>`, `vi <file>`, and get to it :). 
+- File paths are relative to the root of this repo.
+- Before doing anything, run `sh scripts/install.sh`.
+- You'll need my pass phrase for my encryption scripts. Store it in `../pass_phrase`. 
+- To use the push script you need a github fine grained personal access token for this repo
+  (see [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens))
+  which you then store in `../token`. 
+Note: The two previous filepaths just lead to text files that I don't append `.txt` to the end of. 
+      Simply run `touch <file path>`, `vi <file path>`, and get to it :). 
 
 # Software I'm Using
 
-I enjoy a unix style approach to text editing.
-
-## vi
-
-I just use the modal text editor in a terminal. So the exact package I might be using 
-at any time doesn't matter. 
-
-I'm happy using either of the following:
-- https://www.vim.org/
-- https://neovim.io/
-
-I'm also happy just typing vi in whatever available terminal and hoping for the best!
-
-At the moment, I'm on a fedora machine using the vi command which just runs vim 
-with $VIM_POSIX=1 in my ~/.bashrc in order to keep the editor lean and mean. 
-See https://vi.stackexchange.com/questions/23008/posix-compliant-vi-implementations
-
-## tmux
-
-https://github.com/tmux/tmux/wiki
-
-## bash
-
-https://www.gnu.org/software/bash/
-
-## coreutils
-
-https://www.gnu.org/software/coreutils/
-
-## sed
-
-https://www.gnu.org/software/sed/
-
-## awk
-
-I use the following with the `--posix` flag: 
-https://www.gnu.org/software/gawk/
-
-See the following for information about `--posix`:
-https://www.gnu.org/software/gawk/manual/html_node/Options.html
-
-## git
-
-https://git-scm.com/
-
-## gpg
-
-https://www.gnupg.org/
+See `notes/software_i_am_using.md`.
 
 # A note on AI
 
