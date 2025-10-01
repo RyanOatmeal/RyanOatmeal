@@ -1,11 +1,24 @@
 #!/usr/bin/sh
 
-# Throws error if we exit with a nonzero status
-set -e
-
 FILE="notes/project_planning.txt"
 
 if [ -e "$FILE" ]; then
-  echo "ERROR: $FILE exists. Encrypt and delete it with \`sh scripts/encryption/encrypt.sh\`."
+  printf "%s%s\n" \
+         "ERROR: $FILE exists. Encrypt and delete it with " \
+         "\`sh scripts/encryption/encrypt.sh\`."
   exit 1
 fi
+
+STAGED_VIM_SWP_FILE_NAMES=$(
+  git diff --cached --name-only --diff-filter=A \
+  | grep '\.swp$' \
+  || echo ""
+)
+
+if [ -n "$STAGED_VIM_SWP_FILE_NAMES" ]; then
+  echo "ERROR: You've staged (a) .swp file(s). Please unstage the following:"
+  echo "$STAGED_VIM_SWP_FILE_NAMES"
+  exit 1
+fi
+
+echo "Pre-commit hooks have passed."
