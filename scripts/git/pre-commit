@@ -9,6 +9,7 @@ if [ -e "$FILE" ]; then
   exit 1
 fi
 
+# The "A" argument stands for "added"
 STAGED_VIM_SWP_FILE_NAMES=$(
   git diff --cached --name-only --diff-filter=A \
   | grep '\.swp$' \
