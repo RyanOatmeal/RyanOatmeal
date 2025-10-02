@@ -10,8 +10,9 @@ I enjoy a terminal based, unix style approach.
 
 ### vi
 
-I just use the modal text editor in a terminal. So the exact package I might be using 
-at any time doesn't matter. 
+I just use the modal text editor in a terminal according to 
+(this)[https://pubs.opengroup.org/onlinepubs/9799919799/utilities/vi.html]. 
+So the exact package I might be using at any time doesn't matter. 
 
 I'm happy using either of the following:
 - https://www.vim.org/
@@ -25,7 +26,10 @@ See https://vi.stackexchange.com/questions/23008/posix-compliant-vi-implementati
 
 ### grep
 
+I use
 https://www.gnu.org/software/grep/
+but only the parts that can be found in
+https://pubs.opengroup.org/onlinepubs/9799919799/utilities/grep.html
 
 ### sed
 
