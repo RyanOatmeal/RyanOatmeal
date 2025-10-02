@@ -11,7 +11,7 @@ I enjoy a terminal based, unix style approach.
 ### vi
 
 I just use the modal text editor in a terminal according to 
-(this)[https://pubs.opengroup.org/onlinepubs/9799919799/utilities/vi.html]. 
+[this](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/vi.html). 
 So the exact package I might be using at any time doesn't matter. 
 
 I'm happy using either of the following:

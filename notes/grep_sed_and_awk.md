@@ -11,7 +11,7 @@ that grep, sed, and awk work "line by line".
 ### Regular Expressions
 
 Not much to say at this point besides the fact that I go by 
-(this)[https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap09.html]
+[this](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap09.html)
 standard. We'll see plenty of examples in the coming notes.
 
 Also to note, I often abbreviate "Regular Expression" to "regexp". 
@@ -24,5 +24,5 @@ regex to grab the lines that I want from a text file.
 We use `grep "<regex pattern>" <file name>` to do this. 
 
 More questions? Consult 
-(this)[https://pubs.opengroup.org/onlinepubs/9799919799/utilities/grep.html]
+[this](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/grep.html)
 standard.
