@@ -14,7 +14,8 @@ Not much to say at this point besides the fact that I go by
 [this](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap09.html)
 standard. We'll see plenty of examples in the coming notes.
 
-Also to note, I often abbreviate "Regular Expression" to "regexp". 
+Also to note, I often abbreviate "Regular Expression" to "regexp" like most 
+people do. 
 
 ### grep
 

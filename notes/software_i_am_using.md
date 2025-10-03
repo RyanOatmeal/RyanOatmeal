@@ -4,6 +4,10 @@ This is mostly a reference for me to know what to install if I have to migrate
 systems but I intend for this to be expanded into a document that also details
 exactly how I use all of these tools in the near future.
 
+As a general rule of thumb, if a piece of software that I am using is described
+in the most recent (POSIX)[https://pubs.opengroup.org/onlinepubs/9799919799/] 
+standard
+
 ## Text Editing
 
 I enjoy a terminal based, unix style approach.
