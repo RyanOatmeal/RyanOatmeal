@@ -50,6 +50,10 @@ https://www.gnu.org/software/gawk/manual/html_node/Options.html
 
 ## Terminal
 
+### foot
+
+https://codeberg.org/dnkl/foot
+
 ### tmux
 
 https://github.com/tmux/tmux/wiki
@@ -63,6 +67,10 @@ https://www.gnu.org/software/bash/
 https://www.gnu.org/software/coreutils/
 
 ## Other
+
+### Nerdfonts
+
+https://www.nerdfonts.com/
 
 ### git
 
