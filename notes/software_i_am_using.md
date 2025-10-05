@@ -68,6 +68,11 @@ https://www.gnu.org/software/coreutils/
 
 ## Other
 
+### dash
+
+http://gondor.apana.org.au/~herbert/dash/
+https://packages.debian.org/sid/dash
+
 ### Nerdfonts
 
 https://www.nerdfonts.com/
