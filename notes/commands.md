@@ -1,12 +1,12 @@
 # Commands
 
-I have CLI starting to form from a moderate number of shell scripts that I've 
+I have a CLI starting to form from a moderate number of shell scripts that I've 
 been placing in the scripts directory. So in order to start managing that 
 complexity, I've made this document in order to provide navigational assistance 
 for both me, future me, and anyone else who wants to use this repository.
 
 Additionally, instead of using vim's capabilities, I prefer to use tmux, vi, 
-grep, sed, and awk. So I'll also be storing material on constructing one 
+grep, sed, and awk. So I'll also be storing material here on constructing one 
 liners to aid my text editing.
 
 # scripts
@@ -26,6 +26,8 @@ configurations to the correct folders.
 
 The comands to set up git pre-commit hooks found in 
 `scripts/git/pre-commit`. It also runs the config deploy script.
+The goal for this script is to set up everything for the project after I've 
+installed the software in `notes/software_i_am_using.md`.
 
 `dash scripts/install.sh`
 
@@ -59,4 +61,4 @@ This contains a run script for spawning a customized tmux session.
 
 ### run
 
-`dash scripts/git/run.sh`
+`dash scripts/tmux/run.sh`
