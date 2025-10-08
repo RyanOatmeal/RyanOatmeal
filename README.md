@@ -12,23 +12,29 @@ I'm building a knowledge base.
     bash is just fine. I personally use 
     [foot](https://codeberg.org/dnkl/foot), 
     [BigBlueTerm Nerd Font](https://www.nerdfonts.com/font-downloads),
-    and [dash](https://packages.debian.org/sid/dash)
-
-- [Podman](https://podman.io/)
+    and [dash](https://packages.debian.org/sid/dash).
   
-  + It must be accessible from your terminal emulator's shell.
+  + Every other requirement must be accessible by the shell in this terminal 
+    emulator.
 
-- A `secrets.sh` file of the following form:
+- [podman](https://podman.io/)
+  
+- A `secrets.env` file of the following form:
+  
   + ```
     TOKEN=<Your fine grained personal access token which allows you to push up to github>
     PASSPHRASE=<The pass phrase you use to decrypt the project planning document>
     ```
-  + You must be able to access that file in your terminal emulator. 
+- [git](https://git-scm.com/)
+  
+  + You should be able to clone repositories from github.
 
 # Installation
 
 - Configure the required software to your liking. An example can be found in 
-  `scripts/foot/deploy_config.sh`.   
+  `scripts/foot/deploy_config.sh`.  
+- Run `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` and `cd` 
+  into the repository. 
 - Run a podman command that I'm cooking up for creating and running the 
   container (this will also clone the repo into the container, 
   handle the git hooks deploy that currently needs to happen for each clone, 
