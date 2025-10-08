@@ -30,10 +30,11 @@ I'm building a knowledge base.
 - Configure the required software to your liking. An example can be found in 
   `scripts/foot/deploy_config.sh`.   
 - Run a podman command that I'm cooking up for creating and running the 
-  container (this will also clone the repo, handle the git hooks deploy that 
-  currently needs to happen, and install all of the other software with GUIX. 
-  It will also use the the file path to my secrets file which gets used 
-  in the other scripts in the command)
+  container (this will also clone the repo into the container, 
+  handle the git hooks deploy that currently needs to happen for each clone, 
+  and install all of the other software with GUIX. It will also use the the 
+  file path to my secrets file which gets used in the other scripts in the 
+  command)
 - A podman command that opens up a guix shell which then runs a custom
   tmux session using a customized dash shell with everything open that you 
   need in order to get started.
