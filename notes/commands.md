@@ -9,6 +9,37 @@ Additionally, instead of using vim's capabilities, I prefer to use tmux, vi,
 grep, sed, and awk. So I'll also be storing material here on constructing one 
 liners to aid my text editing.
 
+# podman
+
+## Create Image with `<name>` from Containerfile
+
+`podman build --tag <name> .`
+
+Note that this might make more than one image if you're using a base image
+like debian.
+
+## Run command on `<image name>` and get output
+
+`podman run -it <name> <command that can be run on image>`
+
+## List
+
+- List images
+  + `podman images`
+- List containers
+  + `podman container list`
+
+## Delete images and containers
+
+- To delete all images and containers:
+  + `podman rmi --all`
+  + `podman rm --all`
+- To delete a particular image or container:
+  + `podman rm <container>`
+  + `podman rm <image>`
+
+
+
 # scripts
 
 Here we talk about scripts and the folders they sit in.
