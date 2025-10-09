@@ -1,4 +1,4 @@
-# Commands
+# Commands (TO BE REFACTORED FOR USE WITH TMUX KEYBINDS)
 
 I have a CLI starting to form from a moderate number of shell scripts that I've 
 been placing in the scripts directory. So in order to start managing that 
