@@ -3,7 +3,6 @@ FROM docker.io/library/debian:sid as builder
 RUN apt update
 COPY run_container.sh run_container.sh
 
-
 # https://guix.gnu.org/manual/en/html_node/Binary-Installation.html
 RUN apt install -y guix
 
