@@ -1,5 +1,7 @@
 #!/usr/bin/dash
 
-. ./scripts/environment/source.env
+# Starts the podman container. 
 
-podman run --privileged --name $RYAN_OATMEAL_CONTAINER_NAME --replace -it $RYAN_OATMEAL_IMAGE_NAME sh run_container.sh
+. scripts/environment/source.env
+
+podman start $RYAN_OATMEAL_CONTAINER_NAME

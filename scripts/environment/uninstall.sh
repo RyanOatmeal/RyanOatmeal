@@ -2,6 +2,7 @@
 
 . ./scripts/environment/source.env
 
+podman stop --time=5 $RYAN_OATMEAL_CONTAINER_NAME
 podman rm $RYAN_OATMEAL_CONTAINER_NAME
 podman rmi $RYAN_OATMEAL_IMAGE_NAME
 podman rmi docker.io/library/debian:sid

@@ -4,19 +4,18 @@ I'm building a knowledge base.
 
 # Requirements
 
-- A Terminal Emulator
-  
-  + It needs to run a posix compliant shell and support unicode characters.
-
-  + For example:  Foot, Alacritty, Kitty, or WezTerm with a nerdfont running 
-    bash is just fine. I personally use 
-    [foot](https://codeberg.org/dnkl/foot), 
-    [BigBlueTerm Nerd Font](https://www.nerdfonts.com/font-downloads),
-    and [dash](https://packages.debian.org/sid/dash).
+- A Terminal Emulator capable of running 
+  [dash](https://packages.debian.org/sid/dash) scripts.
   
   + Every other requirement must be accessible by the shell in this terminal 
     emulator.
+  
+  + It needs to support unicode characters.
 
+  + For example:  Foot, Alacritty, Kitty, or WezTerm with a nerdfont is 
+    sufficient. I personally use [foot](https://codeberg.org/dnkl/foot) and 
+    [BigBlueTerm Nerd Font](https://www.nerdfonts.com/font-downloads).
+  
 - [podman](https://podman.io/)
   
 - A `secrets.env` file of the following form:
@@ -35,30 +34,21 @@ I'm building a knowledge base.
   `scripts/foot/deploy_config.sh`.  
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git`
 - `cd RyanOatmeal` 
-- `<bash/sh/dash> scripts/environment/install.sh`
+- `dash scripts/environment/install.sh`
 
 ## Uninstall 
 
-This will remove the images and containers made from installing:
-
-`<bash/sh/dash> scripts/environment/uninstall.sh`
+`dash scripts/environment/uninstall.sh` will remove the images and containers 
+made from the installation.
 
 
 # Use 
 
-- `<bash/sh/dash> scripts/environment/start` to start the podman container and enter the environment.
-- To leave the environment, simply exit the shell titled: `<come up with shell title>`.
-
-# Use (MIGRATING FUNCTIONALITY)
-
-- File paths are relative to the root of this repo.
-- Before doing anything, run `sh scripts/install.sh`.
-- You'll need my pass phrase for my encryption scripts. Store it in `../pass_phrase`. 
-- To use the push script you need a github fine grained personal access token for this repo
-  (see [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens))
-  which you then store in `../token`. 
-Note: The two previous filepaths just lead to text files that I don't append `.txt` to the end of. 
-      Simply run `touch <file path>`, `vi <file path>`, and get to it :). 
+- `dash scripts/environment/start.sh` to start the podman container.
+- `dash scripts/environment/stop.sh` to stop the podman container.
+- `dash scripts/environment/enter.sh` to enter the environment. Note 
+  that the podman container must be up (i.e. you should have ran the start
+  script at some point) for this command to work.
 
 # Software I'm Using (MIGRATING TO PODMAN AND GUIX MANIFEST FILES)
 

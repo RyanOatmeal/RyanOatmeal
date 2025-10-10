@@ -1,7 +1,11 @@
 FROM docker.io/library/debian:sid as builder
 
 RUN apt update
-COPY run_container.sh run_container.sh
+
+COPY run_guix_shell.sh run_guix_shell.sh
+
+RUN mkdir base
+COPY manifest.scm base/manifest.scm
 
 # https://guix.gnu.org/manual/en/html_node/Binary-Installation.html
 RUN apt install -y guix
@@ -15,3 +19,5 @@ RUN for i in $(seq -w 1 10);             \
       -c "Guix build usuer $i" --system  \
       guixbuilduser$i;                   \
     done
+
+CMD ["guix-daemon", "--build-users-group=guixbuild"]
