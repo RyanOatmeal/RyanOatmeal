@@ -10,4 +10,4 @@ REPO="RyanOatmeal"
 . "../secrets.env"
 
 PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
-git push "$PUSH_URL" main
+git push $PUSH_URL main
