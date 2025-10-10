@@ -23,7 +23,7 @@ I'm building a knowledge base.
   
   + ```
     TOKEN=<Your fine grained personal access token which allows you to push up to github>
-    PASSPHRASE=<The pass phrase you use to decrypt the project planning document>
+    PASS_PHRASE=<The pass phrase you use to decrypt the project planning document>
     ```
 - [git](https://git-scm.com/)
   

@@ -1,21 +1,11 @@
-#!/bin/bash
+#!/bin/dash
 
 # This is a script to decrypt my project planning. 
 
 # This script should be ran from the root directory of
 # the project.
 
-# This is a setting that causes the whole 
-# script to fail if we exit with a 1.
-set -e
+. "../secrets.env"
 
-PASS_PHRASE_FILE="../pass_phrase"
-
-if [[ ! -f "$PASS_PHRASE_FILE" ]]; then
-  echo "Error: The path to $PASS_PHRASE_FILE does not lead to a file"
-  exit 1
-fi
-
-PASS_PHRASE=$(cat "$PASS_PHRASE_FILE" | tr -d '\n')
-gpg --batch --yes --passphrase "$PASS_PHRASE" -o notes/project_planning.txt -d notes/project_planning.txt.gpg
+gpg --batch --yes --passphrase $PASS_PHRASE -o notes/project_planning.txt -d notes/project_planning.txt.gpg
 rm notes/project_planning.txt.gpg
