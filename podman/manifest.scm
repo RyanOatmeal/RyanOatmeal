@@ -1,1 +1,1 @@
-(specifications->manifest (list "coreutils"))
+(specifications->manifest (list "coreutils" "dash" "bash"))

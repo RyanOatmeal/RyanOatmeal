@@ -6,9 +6,13 @@ COPY run_guix_shell.sh run_guix_shell.sh
 
 RUN mkdir base
 COPY manifest.scm base/manifest.scm
+COPY initialize_bash.sh base/initialize_bash.sh
+COPY secrets.env base/secrets.env
 
 # https://guix.gnu.org/manual/en/html_node/Binary-Installation.html
-RUN apt install -y guix
+RUN apt install -y guix git
+
+RUN git clone https://github.com/RyanOatmeal/RyanOatmeal.git base/RyanOatmeal
 
 # https://guix.gnu.org/manual/en/html_node/Build-Environment-Setup.html
 RUN groupadd --system guixbuild
