@@ -35,7 +35,7 @@ I'm building a knowledge base.
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` in the same 
   directory that `secrets.env` lives.
 - `cd RyanOatmeal` 
-- `dash scripts/environment/install.sh`
+- `dash scripts/environment/install.sh <optional argument where you specify a branch of RyanOatmeal to use>`
 
 ## Uninstall 
 

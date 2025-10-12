@@ -10,7 +10,7 @@ echo "Copied in secrets.env file."
 echo "Beginning podman build:"
 
 BRANCH_NAME=${1:-main}
-podman build --build-arg BRANCH_NAME="${BRANCH_NAME}" --tag $RYAN_OATMEAL_IMAGE_NAME podman
+podman build --build-arg BRANCH_NAME="$BRANCH_NAME" --tag $RYAN_OATMEAL_IMAGE_NAME podman
 
 echo "Podman build succeeded."
 
