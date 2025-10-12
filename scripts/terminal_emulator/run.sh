@@ -1,1 +1,1 @@
-guix shell --container --pure foot podman -- foot -c ~/base/RyanOatmeal/scripts/terminal_emulator/foot.ini
+guix shell --container --pure foot podman bash dash -- foot -c ~/base/RyanOatmeal/scripts/terminal_emulator/foot.ini
