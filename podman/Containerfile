@@ -11,7 +11,8 @@ COPY secrets.env base/secrets.env
 RUN apt install -y guix git
 
 ARG BRANCH_NAME=main
-RUN git clone --branch ${BRANCH_NAME} https://github.com/RyanOatmeal/RyanOatmeal.git base/RyanOatmeal
+ENV BRANCH_NAME=$BRANCH_NAME
+RUN git clone --branch $BRANCH_NAME https://github.com/RyanOatmeal/RyanOatmeal.git base/RyanOatmeal
 
 # https://guix.gnu.org/manual/en/html_node/Build-Environment-Setup.html
 RUN groupadd --system guixbuild
