@@ -31,7 +31,7 @@ I'm building a knowledge base.
 # Installation
 
 - Configure the required software to your liking. An example can be found in 
-  `scripts/foot/deploy_config.sh`.  
+  `scripts/foot/deploy_config.sh` (UPDATE FOR NEW SETUP).  
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` in the same 
   directory that `secrets.env` lives.
 - `cd RyanOatmeal` 
