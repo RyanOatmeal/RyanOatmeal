@@ -1,9 +1,9 @@
 (specifications->manifest 
   (list 
     "coreutils" 
-    "dash", 
-    "bash", 
-    "git",
+    "dash" 
+    "bash" 
+    "git"
     "neovim"
   )
 )
