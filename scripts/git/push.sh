@@ -9,5 +9,7 @@ GH_USERNAME="RyanOatmeal"
 REPO="RyanOatmeal"
 . "../secrets.env"
 
+CURRENT_BRANCH=$(git branch --show-current)
+
 PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
-git push $PUSH_URL main
+git push $PUSH_URL $CURRENT_BRANCH

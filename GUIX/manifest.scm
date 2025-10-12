@@ -1,0 +1,9 @@
+(specifications->manifest 
+  (list 
+    "coreutils" 
+    "dash", 
+    "bash", 
+    "git",
+    "neovim"
+  )
+)

@@ -5,8 +5,6 @@ RUN apt update
 COPY run_guix_shell.sh run_guix_shell.sh
 
 RUN mkdir base
-COPY manifest.scm base/manifest.scm
-COPY initialize_bash.sh base/initialize_bash.sh
 COPY secrets.env base/secrets.env
 
 # https://guix.gnu.org/manual/en/html_node/Binary-Installation.html
