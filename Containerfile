@@ -18,11 +18,11 @@ RUN mkdir base
 COPY secrets.env base/secrets.env
 
 # https://guix.gnu.org/manual/en/html_node/Binary-Installation.html
-RUN apt update && apt install -y guix git
-
-# See scripts/environment/install/sh for how this arg is used.
-ARG BRANCH_NAME=main
-RUN git clone --branch $BRANCH_NAME https://github.com/RyanOatmeal/RyanOatmeal.git base/RyanOatmeal
+# RUN apt update && apt install -y guix git
+RUN cd /tmp
+RUN wget -O guix-install.sh https://guix.gnu.org/install.sh
+RUN chmod +x guix-install.sh
+RUN ./guix-install.sh
 
 # https://guix.gnu.org/manual/en/html_node/Build-Environment-Setup.html
 RUN groupadd --system guixbuild
@@ -30,8 +30,12 @@ RUN for i in $(seq -w 1 10);             \
     do                                   \
       useradd -g guixbuild -G guixbuild  \
       -d /var/empty -s $(which nologin)  \
-      -c "Guix build usuer $i" --system  \
+      -c "Guix build user $i" --system  \
       guixbuilduser$i;                   \
     done
+
+# See scripts/environment/install/sh for how this arg is used.
+ARG BRANCH_NAME=main
+RUN git clone --branch $BRANCH_NAME https://github.com/RyanOatmeal/RyanOatmeal.git base/RyanOatmeal
 
 CMD ["guix-daemon", "--build-users-group=guixbuild"]
