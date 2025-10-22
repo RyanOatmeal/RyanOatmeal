@@ -1,0 +1,2 @@
+Nixos starts with no internet connected. You need to run
+`nmcli dev wifi connect <my wifi ID> password <my wifi password>`
