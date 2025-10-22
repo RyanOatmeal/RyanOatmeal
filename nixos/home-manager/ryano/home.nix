@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # I got this basic setup in the next fouro lines 
+  # I got this basic setup in the next four lines 
   # from the home-manager documentation in a section 
   # titled "Configuration Example"
   home.username = "ryano";
