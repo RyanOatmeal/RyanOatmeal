@@ -16,4 +16,4 @@ fi
 
 rm -rf $XDG_CONFIG_HOME/foot
 mkdir $XDG_CONFIG_HOME/foot
-cp scripts/config/foot.ini $XDG_CONFIG_HOME/foot/foot.ini
+cp scripts/foot/foot.ini $XDG_CONFIG_HOME/foot/foot.ini

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+<fontconfig>
+  <dir>~/base/RyanOatmeal/scripts/<font file name I'll figure out></dir>
+</fontconfig>
+
+https://fontconfig.pages.freedesktop.org/fontconfig/fontconfig-user.html
+https://www.freedesktop.org/wiki/Software/fontconfig/
