@@ -110,6 +110,13 @@
   # Make sure to put the font you want in the appropriate config of foot
   # and nyxt in the home-manager.
   fonts.packages = with pkgs; [
+    # I like to use this in terminal emulators. 
     nerd-fonts.bigblue-terminal
+    # Mathematics font for firefox. 
+    stix-two
+    # Latin font for firefox. 
+    roboto
+    roboto-mono
+    roboto-serif
   ];
 }
