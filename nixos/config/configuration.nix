@@ -112,11 +112,11 @@
   fonts.packages = with pkgs; [
     # I like to use this in terminal emulators. 
     nerd-fonts.bigblue-terminal
-    # I'm using these roboto fonts for firefox.
+    # Mathematics font for firefox. 
+    stix-two
+    # Latin font for firefox. 
     roboto
-    roboto-slab
     roboto-mono
-    roboto-flex
     roboto-serif
   ];
 }
