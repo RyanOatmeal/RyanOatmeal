@@ -54,6 +54,16 @@
     };
   };
 
+  # This starts sway on login if there isn't a display already and only if 
+  # you're on tty1. That last requirement is nice if you need to login real 
+  # real quick outside of a graphical session.
+  # Note: '' is what we use for multi line literals. 
+  programs.bash.profileExtra = '' 
+    if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+      exec sway
+    fi
+  '';
+
   # This is the terminal emulator that I use.
   programs.foot = { 
     enable = true; 
