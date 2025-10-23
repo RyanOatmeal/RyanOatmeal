@@ -38,6 +38,8 @@
     vimdiffAlias = true;
   };
 
+  home.file.".config/nvim".source = neovim;
+
   # I like sway because I used i3 a lot in college. I considered hyprland and 
   # Niri as they seem to be the other two competing tiling WM in the wayland 
   # world. I was not a fan of what I saw in hyprland's community nor did I 
