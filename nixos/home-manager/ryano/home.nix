@@ -38,7 +38,13 @@
     vimdiffAlias = true;
   };
 
-  home.file.".config/nvim".source = neovim;
+  # This creates a symlink between the neovim folder and where my nvim config 
+  # would be in the home folder. 
+  home.file.".config/nvim".source = ./neovim;
+
+  # Neovim kickstart wants ripgrep and fd
+  programs.ripgrep.enable = true;
+  programs.fd.enable = true;
 
   # I like sway because I used i3 a lot in college. I considered hyprland and 
   # Niri as they seem to be the other two competing tiling WM in the wayland 

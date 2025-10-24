@@ -70,6 +70,10 @@
     # can't cut the mustard then it's just time to move on to a general 
     # purpose programming language like rust or python.
     dash
+    # For some reason, nvim kickstart needs these.
+    gnumake
+    unzip
+    libgcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
