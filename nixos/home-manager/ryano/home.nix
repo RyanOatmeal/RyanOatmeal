@@ -38,6 +38,18 @@
     vimdiffAlias = true;
   };
 
+  # This makes more than a symlink. It recursively copies in the files in 
+  # ./neovim and overwrites whatever conflicts. 
+  home.file.".config/nvim" = {
+    source = ./neovim;
+    recursive = true;
+    force = true;
+  };
+  
+  # Neovim kickstart wants ripgrep and fd
+  programs.ripgrep.enable = true;
+  programs.fd.enable = true;
+
   # I like sway because I used i3 a lot in college. I considered hyprland and 
   # Niri as they seem to be the other two competing tiling WM in the wayland 
   # world. I was not a fan of what I saw in hyprland's community nor did I 
