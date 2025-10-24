@@ -38,6 +38,8 @@
     vimdiffAlias = true;
   };
 
+  # This makes more than a symlink. It recursively copies in the files in 
+  # ./neovim and overwrites whatever conflicts. 
   home.file.".config/nvim" = {
     source = ./neovim;
     recursive = true;
