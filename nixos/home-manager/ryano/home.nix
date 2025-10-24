@@ -38,10 +38,12 @@
     vimdiffAlias = true;
   };
 
-  # This creates a symlink between the neovim folder and where my nvim config 
-  # would be in the home folder. 
-  home.file.".config/nvim".source = ./neovim;
-
+  home.file.".config/nvim" = {
+    source = ./neovim;
+    recursive = true;
+    force = true;
+  };
+  
   # Neovim kickstart wants ripgrep and fd
   programs.ripgrep.enable = true;
   programs.fd.enable = true;

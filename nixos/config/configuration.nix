@@ -73,7 +73,7 @@
     # For some reason, nvim kickstart needs these.
     gnumake
     unzip
-    libgcc
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
