@@ -74,6 +74,9 @@
     gnumake
     unzip
     gcc
+    # I put discord here because it's not available in home manager for some 
+    # reason.
+    discord-ptb
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
