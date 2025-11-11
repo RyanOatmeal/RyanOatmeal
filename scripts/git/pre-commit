@@ -23,3 +23,5 @@ if [ -n "$STAGED_VIM_SWP_FILE_NAMES" ]; then
 fi
 
 echo "Pre-commit hooks have passed."
+echo "Status:"
+git status
