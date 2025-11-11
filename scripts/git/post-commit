@@ -1,3 +1,4 @@
 #!/usr/bin/env dash
 
+echo "Status after commit:"
 git status
