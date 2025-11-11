@@ -12,9 +12,18 @@ REPO="RyanOatmeal"
 CURRENT_BRANCH=$(git branch --show-current)
 
 PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
+
+echo "#####"
 echo "Push:"
 git push $PUSH_URL $CURRENT_BRANCH
+echo "#####"
+
+echo "#####"
 echo "Pull:"
 git pull
+echo "#####"
+
+echo "###########################"
 echo "Status after push and pull:"
 git status
+echo "###########################"
