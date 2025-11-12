@@ -68,7 +68,7 @@
     # I like to run dash instead of bash scripts. I prefer to do posix 
     # compliant things when I can and if I'm in a situation where dash 
     # can't cut the mustard then it's just time to move on to a general 
-    # purpose programming language like rust or python.
+    # purpose programming language like C.
     dash
     # For some reason, nvim kickstart needs these.
     gnumake
@@ -77,6 +77,8 @@
     # I put discord here because it's not available in home manager for some 
     # reason.
     discord-ptb
+    # The standard unix text editor :)
+    ed
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
