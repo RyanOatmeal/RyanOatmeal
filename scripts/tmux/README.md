@@ -2,20 +2,19 @@ These are my tmux scripts.
 
 # Keybinds
 
-I prefer to stick with a cli type interface as one can usue through a teletype, 
-but some keybinds are worth learning with the following justifications. 
+I prefer to stick with a cli type interface as one can use through a glass 
+teletype with scrolling capabilities. I'll also allow some more commands as justified
+below.
 
 ## Scrolling
-
-Imagine this as pulling up paper to look at previous output.
 
 - `ctrl-b + [` and navigate with arrow keys.
 - `q` to exit scrolling mode.
 
 ## Navigating Through Windows and Panes
 
-Imagine this as cutting out sheets of paper from the teletype flow and placing 
-them around the room as you work.
+Imagine this as printing out files through commands invoked in a glass teletype 
+interface and having these sheets of paper available for reference.
 
 - `ctrl-b + %` to split a pane into two horizontally.
 - `ctrl-b + "` to split a pane into two vertically. 

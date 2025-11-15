@@ -22,6 +22,12 @@ I'm building a knowledge base.
 
 Just delete the repository and `../secrets.env`.
 
+# Use
+
+- `dash scripts/<folder for collection of commands>/<command>.sh` 
+- There's also markdown and text files in `notes`. The flavor of markdown used 
+  is [CommonMark](https://commonmark.org/). 
+
 # A note on Large Language Models
 
 The only way that I use Large Language Models is by conversing with one when 
