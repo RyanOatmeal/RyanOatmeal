@@ -1,8 +1,6 @@
 Anything found in this directory came from the voice in my head and nothing 
-more.
+more using the following methods and tools:
 
-Any of the text found in this directory was created by the following methods 
-and tools: 
 1. Typed on a keyboard using only my fingers.
 2. Copying and pasting from transcriptions of my voice recordings (I like to 
    walk and think out loud :) ). 
