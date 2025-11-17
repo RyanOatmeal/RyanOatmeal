@@ -79,6 +79,8 @@
     discord-ptb
     # The standard unix text editor :)
     ed
+    # I use this to transcribe my voice recordings.
+    whisperx
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
