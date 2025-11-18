@@ -31,12 +31,21 @@ cd ../
 TRANSCRIPTION_FILE="notes/private/transcriptions.md"
 
 printf "# %s" "$(date)" >> "$TRANSCRIPTION_FILE"
+printf "\n\n" >> "$TRANSCRIPTION_FILE"
+
 for file in tmp_recordings/*.txt; do
   [ -e "$file" ] || continue
-  printf "\n" >> "$TRANSCRIPTION_FILE"
   cat "$file" >> "$TRANSCRIPTION_FILE"
   printf "\n" >> "$TRANSCRIPTION_FILE" 
 done
 
 sudo umount "$filepath"
 sudo rm -r tmp
+
+echo "###################################################################"
+echo "###################################################################"
+echo "###################################################################"
+echo "Succesful transcription. Make sure to delete or move tmp_recordings"
+echo "before running this script again."
+echo "For example: sudo rm -r tmp_recordings"
+echo "For example: sudo mv tmp_recordings ../tmp_recordings"
