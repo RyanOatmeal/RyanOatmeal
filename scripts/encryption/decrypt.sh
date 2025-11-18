@@ -7,5 +7,12 @@
 
 . "../secrets.env"
 
-gpg --batch --yes --passphrase $PASS_PHRASE -o notes/project_planning.txt -d notes/project_planning.txt.gpg
-rm notes/project_planning.txt.gpg
+gpg --batch --yes --passphrase "$PASS_PHRASE" \
+    -o notes/private.tar \
+    -d notes/private.tar.gpg
+
+# x means extract, f means file spepcified
+tar -xf notes/private.tar
+
+rm notes/private.tar.gpg
+rm notes/private.tar
