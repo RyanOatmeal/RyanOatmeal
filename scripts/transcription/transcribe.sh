@@ -30,8 +30,8 @@ done
 cd ../
 TRANSCRIPTION_FILE="notes/private/transcriptions.md"
 
-printf "# %s" "$(date)" >> "$TRANSCRIPTION_FILE"
-printf "\n\n" >> "$TRANSCRIPTION_FILE"
+printf "# %s\n" "$(date)" >> "$TRANSCRIPTION_FILE"
+printf "\n" >> "$TRANSCRIPTION_FILE"
 
 for file in tmp_recordings/*.txt; do
   [ -e "$file" ] || continue
