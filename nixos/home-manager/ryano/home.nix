@@ -28,27 +28,13 @@
   # Terminal multiplexer
   programs.tmux.enable = true;
 
-  # My current text editor of choice. It just werks for me :).
-  # Maybe one day emac's siren call will pull me into the waters, but for now,
-  # I'm just fine with a nice text editor and markdown files. 
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-    vimdiffAlias = true;
-  };
-
-  # This makes more than a symlink. It recursively copies in the files in 
-  # ./neovim and overwrites whatever conflicts. 
-  home.file.".config/nvim" = {
-    source = ./neovim;
-    recursive = true;
-    force = true;
-  };
-  
-  # Neovim kickstart wants ripgrep and fd
-  programs.ripgrep.enable = true;
-  programs.fd.enable = true;
+  # This is an example for deploying home files. 
+  # When I had this, it would deploy a folder in this directory called `neovim`.
+  #  home.file.".config/nvim" = {
+  #    source = ./neovim;
+  #    recursive = true;
+  #    force = true;
+  #  };
 
   # I like sway because I used i3 a lot in college. I considered hyprland and 
   # Niri as they seem to be the other two competing tiling WM in the wayland 
@@ -84,6 +70,8 @@
     enable = true; 
     settings = {
       main = {
+        # Where did this font come from? Good question. You can see it being 
+        # installed in the system configuration file.
         font = "BigBlueTermPlus Nerd Font Mono:size=12"; 
       };
     };
@@ -126,5 +114,4 @@
 
   # For all my encryption needs.
   programs.gpg.enable = true;
-
 }

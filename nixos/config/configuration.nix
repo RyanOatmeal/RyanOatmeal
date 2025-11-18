@@ -68,12 +68,8 @@
     # I like to run dash instead of bash scripts. I prefer to do posix 
     # compliant things when I can and if I'm in a situation where dash 
     # can't cut the mustard then it's just time to move on to a general 
-    # purpose programming language like C.
+    # purpose programming language like Rust.
     dash
-    # For some reason, nvim kickstart needs these.
-    gnumake
-    unzip
-    gcc
     # I put discord here because it's not available in home manager for some 
     # reason.
     discord-ptb
@@ -122,6 +118,7 @@
   # and nyxt in the home-manager.
   fonts.packages = with pkgs; [
     # I like to use this in terminal emulators. 
+    # You can see me invoking this in home manager.
     nerd-fonts.bigblue-terminal
     # Mathematics font for firefox. 
     stix-two
