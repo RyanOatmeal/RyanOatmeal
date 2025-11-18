@@ -1,5 +1,15 @@
 #!/bin/dash
 
+DIR="notes/private"
+
+# I hate unix one letter flags lol. This means "not exist <directory name>".
+if [ ! -e "$DIR" ]; then
+  printf "%s%s\n" \
+         "ERROR: $DIR doesn't exist. Decrypt the directory with: " \
+         "\`dash scripts/encryption/decrypt.sh\`."
+  exit 1
+fi
+
 lsblk
 echo "Enter filepath to mount: "
 read filepath
@@ -18,14 +28,15 @@ for f in *.mp3; do
 done
 
 cd ../
-touch recordings.txt
+TRANSCRIPTION_FILE="notes/private/transcriptions.md"
 
+printf "# %s" "$(date)" >> "$TRANSCRIPTION_FILE"
 for file in tmp_recordings/*.txt; do
   [ -e "$file" ] || continue
-  cat "$file" >> recordings.txt
-  printf "\n" >> recordings.txt
+  printf "\n" >> "$TRANSCRIPTION_FILE"
+  cat "$file" >> "$TRANSCRIPTION_FILE"
+  printf "\n" >> "$TRANSCRIPTION_FILE" 
 done
 
 sudo umount "$filepath"
 sudo rm -r tmp
-sudo rm -r tmp_recordings
