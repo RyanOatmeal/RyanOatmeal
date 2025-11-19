@@ -4,25 +4,23 @@ This is my set of notes on the first edition of
 "Compilers: Principles, Techniques, and Tools by
 Alfred V. Aho, Ravi Sethi, and Jeffrey D. Ullman".
 
-I have a blog that I'll occasionally link out to when I have something worth 
-implementing or sharing.
-
 # Lexing and Parsing
 
 I will not be using any of the lexing and parsing material in the dragon book.
 
 Instead I'll be using parser combinators as I find them better suited for my future
-purposes. In particular, I'll be looking into a library called nom that is used in 
-rust's cargo ecosystem.
+purposes. In particular, I'll be looking into a library called chumsky that is used 
+in rust's cargo ecosystem.
+
+I don't know if I fully understand yet (I hopefully will after playing around with
+parser combinators), but it seems to me that the goal of lexing and parsing is to
+construct "recognizer" automata. These are string machines that basically give you
+a checkmark if a string accords to the rule of the automata or else it tells you 
+the string is bad.
+
+Before heading over to syntax directed translation. I'm going to go mess around with
+chumsky and see what is possible so that I can get an idea of *exactly* what lexing 
+and parsing mean to me and how syntax directed translation is seperate from parsing.
 
 # Syntax Directed Translation
 
-Syntax directed translation is the act of "associating information with a programming
-language construct by attaching attributes to the grammar symbols representing the 
-construct". In this case, a language construct is going to be a syntax tree and the 
-grammar symbols we attach attributes to are the nodes. 
-
-"Values for attributes are computed by "semantic rules" associated with the grammar
-productions." So we'll have a grammar token in a node, the grammar production 
-associated with that node, and then an attribute which is computed based on the
-semantic rule associated with the grammar production.

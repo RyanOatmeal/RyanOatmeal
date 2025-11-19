@@ -28,7 +28,7 @@ Just delete the repository and `../secrets.env`.
 - There's also markdown and text files in `notes`. The flavor of markdown used 
   is [CommonMark](https://commonmark.org/). 
 
-# A note on Large Language Models
+# Provenance
 
 The only way that I use Large Language Models is by conversing with one when 
 my progress slows down followed by copying and pasting in a generated snippet 
