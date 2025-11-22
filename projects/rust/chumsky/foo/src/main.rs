@@ -52,7 +52,6 @@ fn retrieve_source() -> String {
         Ok(result) => {
             file_path = result;
         }
-
         Err(error_message) => {
             panic!("Error retrieving file path: {}", error_message);
         }
