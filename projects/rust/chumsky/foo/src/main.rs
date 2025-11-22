@@ -33,7 +33,7 @@ fn retrieve_file_path<'a>(arguments: &'a Vec<String>) -> Result<&'a str, &'stati
     }
 
     if arguments.len() > 2 {
-        return Err("Must only provide only one argument which is the filename.");
+        return Err("Must provide only one argument which is the filename.");
     }
 
     let file_path = &arguments[1];
