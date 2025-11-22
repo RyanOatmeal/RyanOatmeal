@@ -1,2 +1,2 @@
 secrets.env
-projects/rust/*/target/
+projects/rust/chumsky/*/target
