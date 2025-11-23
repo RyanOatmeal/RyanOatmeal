@@ -127,4 +127,18 @@
     roboto-mono
     roboto-serif
   ];
+  # All of these should have been default from the install. Surely documentation
+  # doesn't take up that much space?
+  # It's important to note that this gives man pages like
+  # configuration.nix(5) and nixos-help.
+  documentation.man.enable = true;
+  documentation.info.enable = true;
+  documentation.enable = true;
+  documentation.dev.enable = true;
+  documentation.doc.enable = true;
+  documentation.nixos.enable = true;
+
+  # I think this allows for me to use `man -k <program>`.
+  documentation.man.generateCaches = true;
+  documentation.man.man-db.enable = true;
 }

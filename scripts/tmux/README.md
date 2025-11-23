@@ -11,6 +11,16 @@ below.
 - `ctrl-b + [` and navigate with arrow keys.
 - `q` to exit scrolling mode.
 
+## Copying and Pasting
+
+Not something I want to rely on often because of better tools available, but it's 
+nice for moving error text out of the terminal and into something like a web 
+browser.
+
+- Make sure to be in scrolling mode.
+- `ctrl + space` to start a selection.
+- `ctrl + w` copy the selection and exit copy mode.
+
 ## Navigating Through Windows and Panes
 
 Imagine this as printing out files through commands invoked in a glass teletype 
