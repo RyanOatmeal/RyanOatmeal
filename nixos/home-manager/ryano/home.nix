@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+
+  # This website is where you can find package options:
+  # https://home-manager-options.extranix.com/
+
   # I got this basic setup in the next four lines 
   # from the home-manager documentation in a section 
   # titled "Configuration Example"
@@ -50,6 +54,12 @@
       modifier = "Mod4";
       terminal = "foot";
     };
+  };
+
+  # Without this, sway's man pages don't show up.
+  programs.man = {
+    enable = true;
+    generateCaches = true;
   };
 
   # This starts sway on login if there isn't a display already and only if 

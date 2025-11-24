@@ -127,8 +127,6 @@
     roboto-mono
     roboto-serif
   ];
-  # All of these should have been default from the install. Surely documentation
-  # doesn't take up that much space?
   # It's important to note that this gives man pages like
   # configuration.nix(5) and nixos-help.
   documentation.man.enable = true;
@@ -139,6 +137,9 @@
   documentation.nixos.enable = true;
 
   # I think this allows for me to use `man -k <program>`.
+  # For **programs that are installed in config**. You have to place
+  # this seperately in home manager for it to pick up a cache for those 
+  # programs.
   documentation.man.generateCaches = true;
   documentation.man.man-db.enable = true;
 }
