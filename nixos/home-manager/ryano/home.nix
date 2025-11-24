@@ -30,7 +30,13 @@
   };
 
   # Terminal multiplexer
-  programs.tmux.enable = true;
+  programs.tmux = {
+    enable = true;
+    extraConfig = ''
+      bind-key a switch-client -T MySnippets
+      bind-key -T MySnippets t run-shell "echo 'Hello World!'"
+    '';
+  };
 
   # This is an example for deploying home files. 
   # When I had this, it would deploy a folder in this directory called `neovim`.

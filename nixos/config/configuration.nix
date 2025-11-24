@@ -75,6 +75,9 @@
     discord-ptb
     # The standard unix text editor :)
     ed
+    # For getting some goodies while using ed, like using the up arrow on
+    # my keyboard to get previous commands.
+    rlwrap
     # I use this to transcribe my voice recordings.
     whisperx
   ];
