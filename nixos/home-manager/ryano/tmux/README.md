@@ -8,8 +8,19 @@ below.
 
 ## Scrolling
 
-- `ctrl-b + [` and navigate with arrow keys.
+- `ctrl-b + [` and navigate with vi keybinds that can be found in
+  the following `Navigation` subsection.
 - `q` to exit scrolling mode.
+
+### Navigation
+
+- `<h, j, k, l>` moves the cursor in the same direction that vi moves it.
+- `C-b` page-up.
+- `C-u` halfpage-up.
+- `C-f` page-down.
+- `C-d` halfpage-down.
+
+For more vi navigation keybindings, run `tmux list-keys -T copy-mode-vi`.
 
 ## Copying and Pasting
 
