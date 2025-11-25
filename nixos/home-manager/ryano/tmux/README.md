@@ -31,3 +31,7 @@ interface and having these sheets of paper available for reference.
 - `ctrl-b + q` followed by number to change to pane inside a window.
 - `ctrl-b + c` to create a new window.
 - `ctrl-b + '` and enter window number to change to that window.
+
+## Custom Keybinds
+
+Look in `definition.nix` for current custom keybinds and use that file to add more.

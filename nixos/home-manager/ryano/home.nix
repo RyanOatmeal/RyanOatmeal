@@ -13,6 +13,11 @@
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 
+  imports = [
+    ./tmux/definition.nix
+    ./sway/definition.nix
+  ];
+
   # My beloved web browser. 
   programs.firefox = {
     enable = true;
@@ -29,15 +34,6 @@
     };
   };
 
-  # Terminal multiplexer
-  programs.tmux = {
-    enable = true;
-    extraConfig = ''
-      bind-key a switch-client -T MySnippets
-      bind-key -T MySnippets t run-shell "echo 'Hello World!'"
-    '';
-  };
-
   # This is an example for deploying home files. 
   # When I had this, it would deploy a folder in this directory called `neovim`.
   #  home.file.".config/nvim" = {
@@ -45,22 +41,6 @@
   #    recursive = true;
   #    force = true;
   #  };
-
-  # I like sway because I used i3 a lot in college. I considered hyprland and 
-  # Niri as they seem to be the other two competing tiling WM in the wayland 
-  # world. I was not a fan of what I saw in hyprland's community nor did I 
-  # like some of its architectural decisions. 
-  # Niri's horizontal scrolling is not my style. Also, a very silly thing, 
-  # but hyprland didn't have a simple home-manager installation instruction on 
-  # on the nix-os wiki :).
-  wayland.windowManager.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-    config = rec {
-      modifier = "Mod4";
-      terminal = "foot";
-    };
-  };
 
   # Without this, sway's man pages don't show up.
   programs.man = {
