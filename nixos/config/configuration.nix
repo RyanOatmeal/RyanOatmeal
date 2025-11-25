@@ -80,6 +80,8 @@
     rlwrap
     # I use this to transcribe my voice recordings.
     whisperx
+    # Parser generator library I use for syntax highlighting.
+    tree-sitter
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

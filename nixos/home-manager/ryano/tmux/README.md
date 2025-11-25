@@ -1,4 +1,5 @@
-These are my tmux scripts.
+`https://github.com/tmux/tmux/wiki/Getting-Started` is the primary resource
+for this information.
 
 # Keybinds
 
