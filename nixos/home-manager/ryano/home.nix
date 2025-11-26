@@ -34,13 +34,18 @@
     };
   };
 
-  # This is an example for deploying home files. 
-  # When I had this, it would deploy a folder in this directory called `neovim`.
-  #  home.file.".config/nvim" = {
-  #    source = ./neovim;
-  #    recursive = true;
-  #    force = true;
-  #  };
+  home.file.".config/tree-sitter" = {
+    source = ./tree_sitter;
+    recursive = true;
+    force = true;
+  };
+
+  home.file.".config/tree_sitter_parsers" = {
+    source = ./tree_sitter_parsers;
+    recursive = true;
+    force = true;
+  };
+
 
   # Without this, sway's man pages don't show up.
   programs.man = {

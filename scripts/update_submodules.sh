@@ -1,0 +1,3 @@
+#!/bin/dash
+
+git submodule update --init --recursive

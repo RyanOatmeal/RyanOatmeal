@@ -82,6 +82,8 @@
     whisperx
     # Parser generator library I use for syntax highlighting.
     tree-sitter
+    # I needed this for tree-sitter.
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
