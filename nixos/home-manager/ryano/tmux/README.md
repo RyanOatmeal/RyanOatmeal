@@ -30,8 +30,8 @@ nice for moving error text out of the terminal and into something like a web
 browser.
 
 - Make sure to be in scrolling mode.
-- `ctrl + space` to start a selection.
-- `ctrl + w` copy the selection and exit copy mode.
+- `space` to start a selection.
+- `enter` to copy it.
 
 ## Navigating Through Windows and Panes
 
