@@ -9,6 +9,17 @@ fn main() {
     if let Some((_head, tail)) = arguments.split_first() {
         parameters = tail;
     }
-        println!("parameters: {:?}", parameters);
+    println!("parameters: {:?}", parameters);
+
+    match parameters.split_first() {
+        Some((head, tail)) => {
+            println!("Head of parameters: {}", head);
+            println!("Tail of parameters: {:?}", tail);
+        }
+        None => {
+            println!("Received None when splitting parameters");
+        }
+    }
+
     tmux::start::logic();
 }
