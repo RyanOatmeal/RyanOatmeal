@@ -6,6 +6,12 @@ let
 in
 
 {
+  # We are going to use tmux display -p "#{client_width}" and 
+  # tmux resize window after startup in order to calculate 
+  # window widths with a max of up to 80 columns. I don't 
+  # think it'll be too hard but it is definitely time to 
+  # bringing in rust binaries.
+
   # Terminal multiplexer
   programs.tmux = {
     enable = true;
