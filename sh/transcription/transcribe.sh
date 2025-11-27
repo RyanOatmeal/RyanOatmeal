@@ -1,7 +1,7 @@
 #!/bin/dash
 
 # There is a lot of logic in here and things that need to be checked
-  with rust binaries. This will be a good exercise.
+# with rust binaries. This will be a good exercise.
 
 DIR="notes/private"
 

@@ -1,2 +1,3 @@
 secrets.env
-projects/rust/chumsky/*/target
+rust/chumsky/*/target
+rust/sh_logic/target
