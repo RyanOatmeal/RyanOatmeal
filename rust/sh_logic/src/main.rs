@@ -3,6 +3,14 @@ mod sh;
 use sh::tmux;
 use std::env;
 
+fn verify_script_path() {
+
+}
+
+fn select_script() {
+
+}
+
 fn main() {
     let arguments: Vec<String> = env::args().collect();
     let mut parameters: &[String] = &[];
@@ -23,6 +31,10 @@ fn main() {
     // on top of an identity function for now. I would rather wait
     // for a parser combinator solution for reasons I've detailed
     // elsewhere.
+
+    // Make a function named "select_script" that calls a function
+    // named "verify_script_path" and if it passes, it uses a match
+    // to start that scrip's logic function.
     match parameters.split_first() {
         Some((head, tail)) => {
             println!("Head of parameters: {}", head);
