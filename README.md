@@ -17,7 +17,7 @@ I'm building a knowledge base.
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` 
 - `cd RyanOatmeal` 
 - `dash programs/sh/git/deploy_hooks.sh` for some git hooks.
-- `dash programs/sh/update_submodules.sh` to bring in the submodules that this 
+- `dash programs/sh/chores/update_submodules.sh` to bring in the submodules that this 
   project uses.
 
 ## Uninstall 
