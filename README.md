@@ -10,14 +10,14 @@ I'm building a knowledge base.
     TOKEN=<Your fine grained personal access token which allows you to push up to github>
     PASS_PHRASE=<The pass phrase you use to decrypt the project planning document>
     ```
-- My [nixos](https://nixos.org/) configuration found in `./nixos`.
+- My [nixos](https://nixos.org/) configuration found in `./programs/nixos`.
 
 # Installation
 
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` 
 - `cd RyanOatmeal` 
-- `dash scripts/git/deploy_hooks.sh` for some git hooks.
-- `dash scripts/update_submodules.sh` to bring in the submodules that this 
+- `dash programs/sh/git/deploy_hooks.sh` for some git hooks.
+- `dash programs/sh/update_submodules.sh` to bring in the submodules that this 
   project uses.
 
 ## Uninstall 
@@ -26,9 +26,10 @@ Just delete the repository and `../secrets.env`.
 
 # Use
 
-- `dash scripts/<folder for collection of commands>/<command>.sh` 
+- `dash programs/sh/<folder for collection of commands>/<command>.sh` 
 - There's also markdown and text files in `docs`. The flavor of markdown used 
   is [CommonMark](https://commonmark.org/). 
+- tmux snippets found in `programs/nixos/home-manager/ryano/tmux/definition.nix`
 
 # Provenance
 
