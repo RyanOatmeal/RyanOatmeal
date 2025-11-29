@@ -1,4 +1,4 @@
-These are my notes on different things. 
+These are my docs on different things. 
 
 The gpg file is just ramblings that I'd prefer to keep private because it'd likely
 be embarrasing for me to have others refer to my brainstorming sessions. It's not a

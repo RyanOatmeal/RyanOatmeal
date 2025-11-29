@@ -8,11 +8,11 @@
 . "../secrets.env"
 
 gpg --batch --yes --passphrase "$PASS_PHRASE" \
-    -o notes/private.tar \
-    -d notes/private.tar.gpg
+    -o docs/private.tar \
+    -d docs/private.tar.gpg
 
 # x means extract, f means file spepcified
-tar -xf notes/private.tar
+tar -xf docs/private.tar
 
-rm notes/private.tar.gpg
-rm notes/private.tar
+rm docs/private.tar.gpg
+rm docs/private.tar

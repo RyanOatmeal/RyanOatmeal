@@ -1,6 +1,6 @@
 # ed, grep, sed, and awk
 
-This is my set of notes on understanding these tools and I often make use of 
+This is my set of docs on understanding these tools and I often make use of 
 the second edition of "sed & awk" by Dale Dougherty and Arnold Robbins.
 
 ## Basics 
@@ -13,7 +13,7 @@ Let's start with some dead simple commands.
 
 Not much to say at this point besides the fact that I go by 
 [this](https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap09.html)
-standard. We'll see plenty of examples in the coming notes.
+standard. We'll see plenty of examples in the coming docs.
 
 Also to note, I often abbreviate "Regular Expression" to "regexp" like most 
 people do. 

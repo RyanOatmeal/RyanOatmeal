@@ -1,6 +1,6 @@
 # Dragon Book
 
-This is my set of notes on the first edition of 
+This is my set of docs on the first edition of 
 "Compilers: Principles, Techniques, and Tools by
 Alfred V. Aho, Ravi Sethi, and Jeffrey D. Ullman".
 

@@ -3,7 +3,7 @@
 # There is a lot of logic in here and things that need to be checked
 # with rust binaries. This will be a good exercise.
 
-DIR="notes/private"
+DIR="docs/private"
 
 # I hate unix one letter flags lol. This means "not exist <directory name>".
 if [ ! -e "$DIR" ]; then
@@ -31,7 +31,7 @@ for f in *.mp3; do
 done
 
 cd ../
-TRANSCRIPTION_FILE="notes/private/transcriptions.md"
+TRANSCRIPTION_FILE="docs/private/transcriptions.md"
 
 printf "# %s\n" "$(date)" >> "$TRANSCRIPTION_FILE"
 printf "\n" >> "$TRANSCRIPTION_FILE"

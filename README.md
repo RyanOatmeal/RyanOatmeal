@@ -27,7 +27,7 @@ Just delete the repository and `../secrets.env`.
 # Use
 
 - `dash scripts/<folder for collection of commands>/<command>.sh` 
-- There's also markdown and text files in `notes`. The flavor of markdown used 
+- There's also markdown and text files in `docs`. The flavor of markdown used 
   is [CommonMark](https://commonmark.org/). 
 
 # Provenance
@@ -44,5 +44,5 @@ typing away in a terminal who asks for advice occasionally as they've plodded
 along. 
 
 Note: There is one exception to this policy which is that anything found in
-`notes/pure` came straight from the voice in my head and nothing else. I
-express this in more detail in `notes/pure/README.md`.
+`docs/pure` came straight from the voice in my head and nothing else. I
+express this in more detail in `docs/pure/README.md`.
