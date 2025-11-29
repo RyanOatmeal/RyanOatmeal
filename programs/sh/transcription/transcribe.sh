@@ -9,7 +9,7 @@ DIR="docs/private"
 if [ ! -e "$DIR" ]; then
   printf "%s%s\n" \
          "ERROR: $DIR doesn't exist. Decrypt the directory with: " \
-         "\`dash scripts/encryption/decrypt.sh\`."
+         "\`dash programs/sh/encryption/decrypt.sh\`."
   exit 1
 fi
 

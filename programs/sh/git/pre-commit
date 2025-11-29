@@ -5,7 +5,7 @@ DIR="docs/private"
 if [ -e "$DIR" ]; then
   printf "%s%s\n" \
          "ERROR: $DIR exists. Encrypt and delete it with " \
-         "\`dash scripts/encryption/encrypt.sh\`."
+         "\`dash programs/sh/encryption/encrypt.sh\`."
   exit 1
 fi
 
