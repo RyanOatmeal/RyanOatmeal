@@ -84,6 +84,7 @@
     tree-sitter
     # I needed this for tree-sitter.
     gcc
+    tor-browser
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
