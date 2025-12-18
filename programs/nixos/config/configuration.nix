@@ -150,4 +150,25 @@
   # programs.
   documentation.man.generateCaches = true;
   documentation.man.man-db.enable = true;
+
+  # Go to http://localhost:631/ to configure your printer.
+  # Go to `Administration` and then `Add Printer` to add printer
+  # in a GUI.
+  services.printing = {
+    enable = true;
+    drivers = [
+      pkgs.brlaser
+    ];
+  };
+  
+  # This configures printing for auto discovery.
+  # https://nixos.wiki/wiki/Printing
+  # I also had to run
+  # sudo cupsenable Brother_HL_L2460DW for my printer to work. 
+  # I found that name by running lpstat -p -d
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 }
