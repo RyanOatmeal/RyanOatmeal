@@ -27,7 +27,7 @@ Just delete the repository and `../secrets.env`.
 
 # Use
 
-- `dash programs/sh/<folder for collection of commands>/<command>.sh` 
+- **From the root directory of the repository:** `dash programs/sh/<folder for collection of commands>/<command>.sh` 
 - tmux snippets found in `programs/nixos/home-manager/ryano/tmux/definition.nix`
 
 # Provenance
