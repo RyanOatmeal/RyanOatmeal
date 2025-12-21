@@ -10,4 +10,4 @@ REPO="ryanoatmeal.github.io"
 
 PUSH_URL="https://${GH_USERNAME}:${WEBSITE_TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
 
-dash push_messaging.sh
+dash programs/sh/git/push_messaging.sh

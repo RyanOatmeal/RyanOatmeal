@@ -1,4 +1,4 @@
 #!/bin/dash
 
-rm -r session_programs
+rm -r programs
 exec tmux kill-session
