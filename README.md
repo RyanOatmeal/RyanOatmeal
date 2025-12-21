@@ -10,6 +10,7 @@ a ThinkPad T16.
   
   + ```
     TOKEN=<Your fine grained personal access token which allows you to push up to github>
+    PASS_PHRASE=<The pass phrase you use to decrypt the project planning document>
     ```
 - My [nixos](https://nixos.org/) configuration found in `./programs/nixos` running
   as the user's operating system.

@@ -106,4 +106,7 @@
       }
     ];
   };
+
+  # For all my encryption needs.
+  programs.gpg.enable = true;
 }

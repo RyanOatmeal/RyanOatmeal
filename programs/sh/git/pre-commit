@@ -1,8 +1,13 @@
 #!/usr/bin/env dash
 
-# In the past, I had some pre-commit scripts, but right 
-# now I don't. I'm sure I'll find some other uses in the
-# future for this space :). So I'm keeping this here.
+DIR="docs/private"
+
+if [ -e "$DIR" ]; then
+  printf "%s%s\n" \
+         "ERROR: $DIR exists. Encrypt and delete it with " \
+         "\`dash programs/sh/encryption/encrypt.sh\`."
+  exit 1
+fi
 
 echo "#############################"
 echo "Pre-commit hooks have passed."
