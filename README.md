@@ -1,7 +1,7 @@
 # Hi there!
 
 This is my computer "base" where I keep a specification of my tech stack in 
-form of a set of nixos files and sh helper scripts. I run everything here on
+the form of a set of nixos files and sh helper scripts. I run everything here on
 a ThinkPad T16. 
 
 # Requirements
