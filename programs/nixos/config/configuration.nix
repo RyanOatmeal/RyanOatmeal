@@ -67,8 +67,7 @@
   environment.systemPackages = with pkgs; [
     # I like to run dash instead of bash scripts. I prefer to do posix 
     # compliant things when I can and if I'm in a situation where dash 
-    # can't cut the mustard then it's just time to move on to a general 
-    # purpose programming language like Rust.
+    # can't cut the mustard then I'm probably overthinking what I'm doing.
     dash
     # I put discord here because it's not available in home manager for some 
     # reason.
@@ -80,10 +79,7 @@
     rlwrap
     # I use this to transcribe my voice recordings.
     whisperx
-    # Parser generator library I use for syntax highlighting.
-    tree-sitter
-    # I needed this for tree-sitter.
-    gcc
+    # ;)
     tor-browser
   ];
 
@@ -122,8 +118,7 @@
   hardware.graphics.enable = true;
 
   # Fonts get installed in a different way than usual system packages.
-  # Make sure to put the font you want in the appropriate config of foot
-  # and nyxt in the home-manager.
+  # Make sure to put the font you want in the appropriate config of foot.
   fonts.packages = with pkgs; [
     # I like to use this in terminal emulators. 
     # You can see me invoking this in home manager.
@@ -163,9 +158,6 @@
   
   # This configures printing for auto discovery.
   # https://nixos.wiki/wiki/Printing
-  # I also had to run
-  # sudo cupsenable Brother_HL_L2460DW for my printer to work. 
-  # I found that name by running lpstat -p -d
   services.avahi = {
     enable = true;
     nssmdns4 = true;

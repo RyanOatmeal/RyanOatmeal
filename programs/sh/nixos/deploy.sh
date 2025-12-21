@@ -3,6 +3,7 @@
 sudo rm -r /etc/nixos
 sudo cp -r programs/nixos /etc/nixos
 sudo nix-channel --update
+sudo nixos-rebuild test
 sudo nixos-rebuild switch
 sudo nix-collect-garbage -d
 # I have no idea how the auto generation of this 

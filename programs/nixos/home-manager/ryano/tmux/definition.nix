@@ -21,8 +21,6 @@ in
       setw -g mode-keys vi
       bind-key a switch-client -T MySnippets
       bind-key -T MySnippets e send-keys "${ed}"
-      bind-key '"' split-window -h -l 80
-      bind-key % split-window -v -l 80
     '';
   };
 }

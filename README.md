@@ -1,6 +1,8 @@
-# Hi there 👋
+# Hi there!
 
-I'm building a knowledge base.
+This is my computer "base" where I keep a specification of my tech stack in 
+form of a set of nixos files and sh helper scripts. I run everything here on
+a ThinkPad T16. 
 
 # Requirements
 
@@ -8,17 +10,15 @@ I'm building a knowledge base.
   
   + ```
     TOKEN=<Your fine grained personal access token which allows you to push up to github>
-    PASS_PHRASE=<The pass phrase you use to decrypt the project planning document>
     ```
-- My [nixos](https://nixos.org/) configuration found in `./programs/nixos`.
+- My [nixos](https://nixos.org/) configuration found in `./programs/nixos` running
+  as the user's operating system.
 
 # Installation
 
 - `git clone https://github.com/RyanOatmeal/RyanOatmeal.git` 
 - `cd RyanOatmeal` 
-- `dash programs/sh/git/deploy_hooks.sh` for some git hooks.
-- `dash programs/sh/chores/update_submodules.sh` to bring in the submodules that this 
-  project uses.
+- `dash programs/sh/git/deploy_hooks.sh` for important pre-commit hooks.
 
 ## Uninstall 
 
@@ -27,8 +27,6 @@ Just delete the repository and `../secrets.env`.
 # Use
 
 - `dash programs/sh/<folder for collection of commands>/<command>.sh` 
-- There's also markdown and text files in `docs`. The flavor of markdown used 
-  is [CommonMark](https://commonmark.org/). 
 - tmux snippets found in `programs/nixos/home-manager/ryano/tmux/definition.nix`
 
 # Provenance
@@ -44,6 +42,3 @@ been involved in the process of making this repository. Just a single human
 typing away in a terminal who asks for advice occasionally as they've plodded 
 along. 
 
-Note: There is one exception to this policy which is that anything found in
-`docs/pure` came straight from the voice in my head and nothing else. I
-express this in more detail in `docs/pure/README.md`.

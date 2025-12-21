@@ -34,18 +34,12 @@
     };
   };
 
-  home.file.".config/tree-sitter" = {
-    source = ./tree_sitter;
-    recursive = true;
-    force = true;
-  };
-
-  home.file.".config/tree_sitter_parsers" = {
-    source = ./tree_sitter_parsers;
-    recursive = true;
-    force = true;
-  };
-
+  # Here's an example for how to import a config file.
+  #  home.file.".config/tree-sitter" = {
+  #    source = ./tree_sitter;
+  #    recursive = true;
+  #    force = true;
+  #  };
 
   # Without this, sway's man pages don't show up.
   programs.man = {
@@ -112,7 +106,4 @@
       }
     ];
   };
-
-  # For all my encryption needs.
-  programs.gpg.enable = true;
 }

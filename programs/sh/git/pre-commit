@@ -1,26 +1,8 @@
 #!/usr/bin/env dash
 
-DIR="docs/private"
-
-if [ -e "$DIR" ]; then
-  printf "%s%s\n" \
-         "ERROR: $DIR exists. Encrypt and delete it with " \
-         "\`dash programs/sh/encryption/encrypt.sh\`."
-  exit 1
-fi
-
-# The "A" argument stands for "added"
-STAGED_VIM_SWP_FILE_NAMES=$(
-  git diff --cached --name-only --diff-filter=A \
-  | grep '\.swp$' \
-  || echo ""
-)
-
-if [ -n "$STAGED_VIM_SWP_FILE_NAMES" ]; then
-  echo "ERROR: You've staged (a) .swp file(s). Please unstage the following:"
-  echo "$STAGED_VIM_SWP_FILE_NAMES"
-  exit 1
-fi
+# In the past, I had some pre-commit scripts, but right 
+# now I don't. I'm sure I'll find some other uses in the
+# future for this space :). So I'm keeping this here.
 
 echo "#############################"
 echo "Pre-commit hooks have passed."
