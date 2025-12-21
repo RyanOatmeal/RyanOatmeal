@@ -5,7 +5,7 @@
 # This script should be ran from the root directory of
 # the project.
 
-. "programs/sh/git/push.sh" 
+. "programs/sh/git/push.env" 
 REPO="RyanOatmeal"
 
 PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
