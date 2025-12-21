@@ -5,9 +5,9 @@
 # This script should be ran from the root directory of
 # the project.
 
-. "./push.env"
-REPO="RyanOatmeal"
+. "../git/push.env"
+REPO="ryanoatmeal.github.io"
 
-PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
+PUSH_URL="https://${GH_USERNAME}:${WEBSITE_TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
 
 dash push_messaging.sh
