@@ -30,6 +30,10 @@ Just delete the repository and `../secrets.env`.
 - **From the root directory of the repository:** `dash programs/sh/<folder for collection of commands>/<command>.sh` 
 - tmux snippets found in `programs/nixos/home-manager/ryano/tmux/definition.nix`
 
+# Licensing
+
+This repository is under the AGPL-3.0 license found in `LICENSE`.
+
 # Provenance
 
 The only way that I use Large Language Models is by conversing with one when 
