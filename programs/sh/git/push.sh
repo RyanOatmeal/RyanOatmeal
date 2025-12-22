@@ -1,13 +1,37 @@
-#!/usr/bin/dash
+# This is a function to push up to a branch you are on with a token. 
 
-# This is a script to push up to the branch you are on with a token. 
+push() {
 
-# This script should be ran from the root directory of
-# the project.
+  REPO="$1"
+  TOKEN="$2"
+  USER="RyanOatmeal"
 
-. "programs/sh/git/push.env" 
-REPO="RyanOatmeal"
+  if [ -z "$REPO" ]; then
+    echo "Error: repository name was not provided during push."
+    exit 1
+  fi
 
-PUSH_URL="https://${GH_USERNAME}:${TOKEN}@github.com/${GH_USERNAME}/${REPO}.git"
+  if [ -z "$TOKEN" ]; then
+    echo "Error: token was not provided during push."
+    exit 1
+  fi
 
-. programs/sh/git/push_messaging.sh
+  BRANCH=$(git branch --show-current)
+  URL="https://${USER}:${TOKEN}@github.com/${USER}/${REPO}.git"
+
+  echo "#####"
+  echo "Push:"
+  git push "$URL" "$BRANCH"
+  echo "#####"
+
+  echo "#####"
+  echo "Pull:"
+  git pull
+  echo "#####"
+
+  echo "###########################"
+  echo "Status after push and pull:"
+  git status
+  echo "###########################"
+
+}
