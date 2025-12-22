@@ -6,8 +6,8 @@
 # the project.
 
 . "../secrets.env"
-. "programs/sh/git/push.sh"
+. "session_programs/sh/git/push.sh"
 
 REPO="ryanoatmeal.github.io"
 
-push "$REPO" "$TOKEN"
+push "$REPO" "$WEBSITE_TOKEN"
