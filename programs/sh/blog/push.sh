@@ -8,6 +8,6 @@
 . "../secrets.env"
 . "programs/sh/git/push.sh"
 
-REPO="RyanOatmeal"
+REPO="ryanoatmeal.github.io"
 
 push "$REPO" "$TOKEN"
