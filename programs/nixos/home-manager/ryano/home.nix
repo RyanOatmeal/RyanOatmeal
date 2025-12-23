@@ -109,4 +109,13 @@
 
   # For all my encryption needs.
   programs.gpg.enable = true;
+
+  home.shellAliases = {
+    # https://www.gnu.org/software/texinfo/manual/info-stnd/html_node/infokey-format.html
+    info = "info --vi-keys";
+    # I dream of syntax highlighting with rlwrap soon. 
+    # https://aartaka.me/customize-ed-2.html
+    # All in good time :)
+    ed = "rlwrap ed --verbose --traditional ";
+  };
 }

@@ -5,6 +5,10 @@ let
   ed = "rlwrap ed --verbose --traditional ";
 in
 
+let
+  info = "info --vi-keys ";
+in
+
 {
   # We are going to use tmux display -p "#{client_width}" and 
   # tmux resize window after startup in order to calculate 
@@ -20,7 +24,10 @@ in
     extraConfig = ''
       setw -g mode-keys vi
       bind-key a switch-client -T MySnippets
+      # I am not using e and i, but I'm leaving them for instructional
+      # purposes. There was no reason not to alias these bad boys. 
       bind-key -T MySnippets e send-keys "${ed}"
+      bind-key -T MySnippets i send-keys "${info}"
     '';
   };
 }

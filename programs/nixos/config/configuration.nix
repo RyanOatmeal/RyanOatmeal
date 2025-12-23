@@ -77,6 +77,10 @@
     # For getting some goodies while using ed, like using the up arrow on
     # my keyboard to get previous commands.
     rlwrap
+    # Macro Processor
+    gnum4
+    # File generation coordinator.
+    gnumake
     # I use this to transcribe my voice recordings.
     whisperx
     # ;)
