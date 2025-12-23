@@ -2,7 +2,7 @@
 
 STARTING_DIR=$(pwd)
 SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
-SESSION_NAME="ryan_oats"
+SESSION_NAME="ryan_oats_$$"
 
 DIR="session_programs"
 

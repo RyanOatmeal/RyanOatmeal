@@ -1,3 +1,2 @@
 secrets.env
-programs/rust/chumsky/*/target
-programs/rust/sh_logic/target
+session_programs
