@@ -115,7 +115,7 @@
     # Most important for your purposes: 
     # hjkl'ish navigation.
     # `alt + g` enter node your cursor is on. 
-    # `ctrl + n/p/u` next/previous/up.
+    # `ctrl + x + n/p/u` next/previous/up.
     # `g/G` top/bottom of node.
     info = "info --vi-keys";
     # I dream of syntax highlighting with rlwrap soon. 
