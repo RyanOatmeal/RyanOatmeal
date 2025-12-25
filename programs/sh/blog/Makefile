@@ -27,7 +27,7 @@ all: $(TARGET_HTML_FILES) $(STATIC_TARGETS) copy-the-rest
 
 $(TARGET_DIRECTORY)/%.html: $(SOURCE_DIRECTORY)/%.m4
 	@mkdir -p $(dir $@)
-	m4 $< > $@
+	m4 --include=$(SOURCE_DIRECTORY) $< > $@
 	@echo "Expanded $< -> $@"
 
 $(TARGET_DIRECTORY)/%: $(SOURCE_DIRECTORY)/%
