@@ -26,7 +26,7 @@ push() {
 
   echo "#####"
   echo "Pull:"
-  git pull
+  git pull origin "$BRANCH"
   echo "#####"
 
   echo "###########################"
