@@ -2,9 +2,16 @@
 
 sudo rm -r /etc/nixos
 sudo cp -r programs/nixos /etc/nixos
-sudo nix-channel --update
+
+(
+  cd /etc/nixos
+  sudo nix flake update
+)
+cp /etc/nixos/flake.lock programs/nixos/flake.lock
+
 sudo nixos-rebuild switch
-sudo nix-collect-garbage -d
+sudo nix-collect-garbage --delete-older-than 30d
+
 # I have no idea how the auto generation of this 
 # file works. So I'm just gonna move it into git 
 # everytime I deploy, idk if it'll ever change.
