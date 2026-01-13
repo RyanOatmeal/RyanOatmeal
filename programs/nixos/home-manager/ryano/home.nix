@@ -122,5 +122,7 @@
     # https://aartaka.me/customize-ed-2.html
     # All in good time :)
     ed = "rlwrap ed --verbose --traditional ";
+    # Make build time go brrrr
+    make = "make -j$(nproc)";
   };
 }
