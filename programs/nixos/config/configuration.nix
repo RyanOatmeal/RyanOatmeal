@@ -89,6 +89,10 @@
     electrum
     # I installed this for the gnu c compiler.
     gcc
+    # So I can share what gcc successfully compiles.
+    emscripten
+    # I like to use this for grabbing text files.
+    wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
