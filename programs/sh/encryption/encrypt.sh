@@ -9,8 +9,8 @@
 . "../secrets.env"
 
 # -cf means create file 
-tar -cf docs/private.tar docs/private
+tar -cJf docs/private.tar.xz docs/private
 
-gpg --batch --yes --passphrase "$PASS_PHRASE" -c docs/private.tar
+gpg --batch --yes --passphrase "$PASS_PHRASE" -c docs/private.tar.xz
 rm -r docs/private
-rm docs/private.tar
+rm docs/private.tar.xz

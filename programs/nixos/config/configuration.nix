@@ -87,6 +87,8 @@
     tor-browser
     # bitcoin wallet
     electrum
+    # I installed this for the gnu c compiler.
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
