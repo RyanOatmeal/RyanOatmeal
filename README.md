@@ -32,7 +32,7 @@ Just delete the repository and `../secrets.env`.
 
 # Licensing
 
-This repository is under the AGPL-3.0 license found in `LICENSE`.
+This repository is under the MIT license found in `LICENSE`.
 
 # Provenance
 
