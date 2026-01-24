@@ -36,11 +36,8 @@ This repository is under the AGPL-3.0 license found in `LICENSE`.
 
 # Provenance
 
-The author of this repository uses AI the same way that they've used search 
-engines and forums in the past. That way is by using it as a tool which sits
-strictly in their web browser, is queried, and the author then reads the 
-output, looking for insight into what they're doing. 
-
-There is nothing like agentic AI or IDE integrated AI tools being used
-here to generate any code or prose. Everything here is written by one human
-in the traditional fashion.
+When I first started out making this repository, I used Gemini as a glorified 
+google search engine. But after getting frustrated a few too many times with 
+the output, I found it not worth my time. **So I do not intentionally use LLM's for any of
+my work.** I'm just a single developer using manuals, a unix like desktop 
+environment, and what's left of human centric forums like stack overflow.
