@@ -26,7 +26,10 @@ cd tmp_recordings
 
 for f in *.mp3; do
   if [ -f "$f" ]; then
-    whisperx "$f" --compute_type int8
+    # broken for now :(
+    # https://github.com/NixOS/nixpkgs/issues/460172
+    # https://github.com/m-bain/whisperX/issues/1304
+    TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=true whisperx "$f" --compute_type int8
   fi
 done
 
