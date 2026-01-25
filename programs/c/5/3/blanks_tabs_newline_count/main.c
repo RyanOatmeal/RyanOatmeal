@@ -23,9 +23,9 @@ int main(void) {
     }
   }
 
-  printf("Number of new lines: %d\n", new_line_count);
-  printf("Number of blanks:    %d\n", blank_count);
-  printf("Number of tabs:      %d\n", tab_count);
+  printf("Number of lines:  %d\n", (new_line_count + 1));
+  printf("Number of spaces: %d\n", blank_count);
+  printf("Number of tabs:   %d\n", tab_count);
 
   return 0;
 
