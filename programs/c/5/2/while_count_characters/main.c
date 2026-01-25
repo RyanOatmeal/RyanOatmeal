@@ -4,7 +4,7 @@ int main(void) {
   long number_of_characters;
 
   number_of_characters = 0;
-  while( (getchar()) != (int)'Q' ) {
+  while( (getchar()) != 'Q' ) {
     ++number_of_characters;
   }
 

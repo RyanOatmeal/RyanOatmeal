@@ -5,7 +5,7 @@ int main(void) {
 
   for (
     number_of_characters = 0;
-    getchar() != (int)'Q';
+    getchar() != 'Q';
     ++number_of_characters
   ) {}
 
