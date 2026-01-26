@@ -93,9 +93,6 @@
     emscripten
     # I like to use this for grabbing text files.
     wget
-    # So I can use cygwin to cross compile executables for 
-    # friends :).
-    quickemu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -145,6 +142,7 @@
     roboto-mono
     roboto-serif
   ];
+
   # It's important to note that this gives man pages like
   # configuration.nix(5) and nixos-help.
   documentation.man.enable = true;

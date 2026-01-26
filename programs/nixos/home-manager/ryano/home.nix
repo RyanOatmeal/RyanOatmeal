@@ -16,6 +16,8 @@
   imports = [
     ./tmux/definition.nix
     ./sway/definition.nix
+    ./neovim/definition.nix
+    ./foot/definition.nix
   ];
 
   # My beloved web browser. 
@@ -58,18 +60,6 @@
         exec sway
       fi
     '';
-  };
-
-  # This is the terminal emulator that I use.
-  programs.foot = { 
-    enable = true; 
-    settings = {
-      main = {
-        # Where did this font come from? Good question. You can see it being 
-        # installed in the system configuration file.
-        font = "BigBlueTermPlus Nerd Font Mono:size=12"; 
-      };
-    };
   };
 
   # This service allows me to manage my external monitor. 
@@ -124,12 +114,5 @@
     ed = "rlwrap ed --verbose --traditional ";
     # Make build time go brrrr
     make = "make -j$(nproc)";
-  };
-  
-  programs.neovim = {
-    enable = true;
-    extraConfig = ''
-      set colorcolumn=81
-    '';
   };
 }
