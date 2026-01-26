@@ -125,4 +125,11 @@
     # Make build time go brrrr
     make = "make -j$(nproc)";
   };
+  
+  programs.neovim = {
+    enable = true;
+    extraConfig = ''
+      set colorcolumn=81
+    '';
+  };
 }
