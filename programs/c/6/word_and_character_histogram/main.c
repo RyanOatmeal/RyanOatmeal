@@ -38,7 +38,8 @@ int main(void) {
   int word_state;
 
   printf("Type in any text and end it with the character '0' on a new line\n");
-  printf("in order to get a histogram for words with 25 or less characters:\n");
+  printf("in order to get a wordh length histogram for words with 25 or\n");
+  printf("less characters:\n");
   printf("\n"); 
 
   for (
@@ -129,19 +130,17 @@ int main(void) {
       }
 
       if (width_candidate == 0 && previous_word_frequency > 0) {
-        this_word_frequency_width = word_frequency_index;
+        this_word_frequency_width = word_frequency_index - 1;
       }
     }
   }
 
-  printf("this word frequency width: %d\n", this_word_frequency_width);
-
   if (this_word_frequency_width > 0) {
   
     printf("===============================================================\n");
-    printf("Word frequency histogram:\n");
+    printf("Word length histogram:\n");
     printf("===============================================================\n");
-    printf("\n");
+    printf("\n\n");
 
     for (
       word_frequencies_height_index = largest_word_frequency;
@@ -186,6 +185,11 @@ int main(void) {
   } else {
     printf("No words submitted.");
   }
+
+  printf("\n\n");
+  printf("Type in 'q' and hit enter to exit...\n");
+  
+  while (getchar() != 'q') {}
 
   return 0; 
 }
