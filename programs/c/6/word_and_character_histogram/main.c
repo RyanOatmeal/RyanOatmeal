@@ -38,7 +38,7 @@ int main(void) {
   int word_state;
 
   printf("Type in any text and end it with the character '0' on a new line\n");
-  printf("in order to get a wordh length histogram for words with 25 or\n");
+  printf("in order to get a word length histogram for words with 25 or\n");
   printf("less characters:\n");
   printf("\n"); 
 
