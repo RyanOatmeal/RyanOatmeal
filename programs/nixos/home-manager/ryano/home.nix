@@ -115,4 +115,9 @@
     # Make build time go brrrr
     make = "make -j$(nproc)";
   };
+
+  home.sessionVariables = {
+    # For grimshot. See the man page.
+    XDG_SCREENSHOTS_DIR = "/home/ryano/Pictures/screenshots";
+  };  
 }

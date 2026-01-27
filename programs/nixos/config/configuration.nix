@@ -93,6 +93,13 @@
     emscripten
     # I like to use this for grabbing text files.
     wget
+    # https://nixos.wiki/wiki/NixOS_Wiki:Audio
+    pavucontrol
+    pamixer
+    # Video player
+    vlc
+    # Screenshot utility
+    sway-contrib.grimshot
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -175,5 +182,18 @@
     enable = true;
     nssmdns4 = true;
     openFirewall = true;
+  };
+
+  # Sound stuff
+  # https://nixos.wiki/wiki/NixOS_Wiki:Audio
+  services.pulseaudio.enable = false;
+  security.rtkit = {
+    enable = true;
+  };
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
   };
 }

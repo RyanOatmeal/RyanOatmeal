@@ -15,5 +15,11 @@
       modifier = "Mod4";
       terminal = "foot";
     };
+    extraConfig = ''
+      bindsym Mod4+p       exec grimshot save active
+      bindsym Mod4+Shift+p exec grimshot save area
+      bindsym Mod4+Mod1+p  exec grimshot save output
+      bindsym Mod4+Ctrl+p  exec grimshot save window
+    '';
   };
 }
