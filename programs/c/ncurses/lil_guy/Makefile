@@ -13,6 +13,10 @@ TARGET = $(BINARY_DIRECTORY)/main
 # and https://sourceware.org/glibc/manual/
 POSIX_VERSION_FLAG =
 
+# It's important to note that this linker needs to come after the source and 
+# before the output.
+NCURSES_LINKER = -lncurses
+
 $(TARGET): $(SOURCE)
 	rm -rf "$@"; \
 	mkdir -p "$$(dirname "$@")"; \
@@ -23,9 +27,9 @@ $(TARGET): $(SOURCE)
           -Wextra \
           -Werror \
           $(POSIX_VERSION_FLAG) \
-          -lncurses \
-          -o "$@" \
-          $(SOURCE)
+          $(SOURCE) \
+          $(NCURSES_LINKER) \
+          -o "$@" 
 
 all: $(TARGET) 
 	@echo "Build Complete."

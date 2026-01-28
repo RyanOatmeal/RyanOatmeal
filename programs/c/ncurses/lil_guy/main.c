@@ -1,5 +1,4 @@
 #include <ncurses.h>
-#include <ncursesw/curses.h>
 
 /* For Sylvie */
 #define CHUNGUS 20
