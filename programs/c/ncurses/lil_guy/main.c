@@ -15,7 +15,9 @@ int main(void) {
 
   initscr();
 
+  /* Turns off cursos and stops getch from peppering screen with characters */
   curs_set(0);
+  noecho();
 
   lil_guy_x = 0;
   lil_guy_y = 0;
@@ -26,7 +28,7 @@ int main(void) {
   mvaddch(lil_guy_y, lil_guy_x, '#');
   refresh();
 
-  while ( (control = getchar()) != 'Q' ) {
+  while ( (control = getch()) != 'Q' ) {
     
     if (control == 'd') {
       mvaddch(lil_guy_y, lil_guy_x, ' ');
