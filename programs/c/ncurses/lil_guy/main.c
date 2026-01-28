@@ -4,8 +4,9 @@
 #define CHUNGUS 20
 
 int main(void) {
-
-  char control;
+ 
+  /* I guess control is an int? The documentation isn't clear to me. */
+  int control;
   int lil_guy_x;
   int lil_guy_y;
   int boundary_x;
@@ -18,6 +19,9 @@ int main(void) {
   /* Turns off cursos and stops getch from peppering screen with characters */
   curs_set(0);
   noecho();
+
+  /* idk what is going on right here, but I think it helps with this logic. */
+  cbreak(); 
 
   lil_guy_x = 0;
   lil_guy_y = 0;
