@@ -100,6 +100,8 @@
     vlc
     # Screenshot utility
     sway-contrib.grimshot
+    # A much better tetris engine.
+    tetrio-desktop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

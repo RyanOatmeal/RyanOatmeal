@@ -20,9 +20,6 @@ int main(void) {
   curs_set(0);
   noecho();
 
-  /* idk what is going on right here, but I think it helps with this logic. */
-  cbreak(); 
-
   lil_guy_x = 0;
   lil_guy_y = 0;
   getmaxyx(stdscr, boundary_y, boundary_x);
